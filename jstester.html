@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>
+Joe's JavaScript Page
+</title>
+<script language = "JavaScript">
+
+var number = 0; // GLOBAL variable available anywhere in our script.
+var myList = [ "Anne", "Bob", "Cathy", "Doug" ];
+
+function tester()
+{
+
+        var answer; // Declare a new variable called answer
+        answer = confirm("Hello World"); // true or false is stored in answer var
+
+        answer = prompt("What's you name?");// string literal is between open / close quote marks
+        alert("Welcome to my site, "+answer);
+
+        // = is ASSIGNMENT operator  (right side is assigned to the left side)
+        number = number - 1; // subtract 1 from number
+
+/*
+        // == test EQUALITY
+        if( number == 0)
+        {
+             alert("BLASTOFF!");
+             number = 11;
+        }
+        //number = 12;
+        else
+        {
+             alert(number);
+
+        }
+
+
+        // index of the first element is 0.
+        alert(myList[number]);
+        number = number + 1; // add 1 from myList
+        if( number == 4 ) // does number equal 4???
+        {
+
+             number = 0;
+        }
+
+*/
+
+}
+
+</script>
+</head>
+<body>
+<center>
+<h1> JavaScript Tester </h1>
+
+<br/>
+<br/>
+
+<input type="button" value="Click Me" onClick="tester()"/>
+
+<br/>
+
+Click <a href="index.html">here</a> to return to my home page.
+
+</center>
+</body>
+</html>
